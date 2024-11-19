@@ -1,0 +1,118 @@
+@font-face {
+    font-family: GrimptBold;
+    src: url(../Fonte/grimpt-bold.ttf);
+}
+
+@font-face {
+    font-family: GrimptRegular;
+    src: url(../Fonte/grimpt-regular.ttf);
+}
+
+@font-face {
+    font-family: Kagitingan;
+    src: url(../Fonte/Kagitingan.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-size: 16px;
+    background-color: #1B262C; 
+    width: 100%;
+    overflow-x: hidden; 
+    background-image: url(../Logo/LoboFundo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-adicionar{
+    margin: clamp(5px, 2%, 20px);
+    display: flex;
+    border-radius: clamp(8px, 2vw, 16px);
+    background-color: blue;
+    font-family: Kagitingan;
+    color: #F2F2F2;
+    text-transform:uppercase;
+    height: clamp(20px, 6vw, 30px);
+    width: clamp(60px, 20vw, 70px);
+    font-size: clamp(14px, 4vw, 22px);
+    transition: 0.5s ease;
+    text-decoration: none;
+    padding: clamp(5px, 2%, 10px) clamp(10px, 5%, 20px);
+    align-items: center;
+}
+.btn-adicionar:hover{
+    background-color: rgb(0, 0, 102);
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #F2F2F2;
+    font-family: kagitingan;
+    display: flex;
+    font-size: clamp(20px, 6vw, 30px);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: clamp(60vh, 80vh, 100vh);
+    padding: clamp(10px, 5vw, 50px); 
+    gap: clamp(10px, 2vw, 30px);
+}
+
+
+form{
+    font-family: GrimptBold;
+    color: #F2F2F2;
+    font-size: clamp(16px, 2vw, 22px);
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    font-size: clamp(14px, 2vw, 18px);
+    border: none;
+    outline: unset;
+    padding: 15px;
+    width: clamp(250px, 50%, 400px);
+    border-radius: clamp(8px, 2vw, 16px);
+}
+
+label{
+    font-size: clamp(14px, 2vw, 18px);
+    margin-left: clamp(5px, 2vw, 10px);
+    margin-bottom: clamp(3px, 1vw, 5px);
+}
+
+button{
+    display: block;
+    border-radius: clamp(8px, 2vw, 16px);
+    background-color: #9E241A;
+    font-family: Kagitingan;
+    color: #F2F2F2;
+    text-transform:uppercase;
+    height: clamp(40px, 6vw, 50px);
+    width: clamp(280px, 60%, 280px);
+    font-size: clamp(18px, 3vw, 35px);
+    transition: 0.5s ease;
+    border: 1px solid #1B262C;
+}
+
+button:hover{
+    background-color: #C43024;
+    cursor: pointer;
+    transform: scale(1.05);
+}

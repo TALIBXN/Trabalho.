@@ -1,0 +1,146 @@
+@font-face {
+    font-family: GrimptBold;
+    src: url(../Fonte/grimpt-bold.ttf);
+}
+
+@font-face {
+    font-family: GrimptRegular;
+    src: url(../Fonte/grimpt-regular.ttf);
+}
+
+@font-face {
+    font-family: Kagitingan;
+    src: url(../Fonte/Kagitingan.otf);
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 16px;
+    background-color: #1B262C; 
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden; 
+    background-image: url(../Logo/LoboFundo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+h2{
+    color: #F2F2F2;
+    font-family: kagitingan;
+    font-size: clamp(30px, 6vw, 50px);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.btn-adicionar{
+    margin: clamp(5px, 2%, 20px);
+    display: flex;
+    border-radius: clamp(8px, 2vw, 16px);
+    background-color: blue;
+    font-family: Kagitingan;
+    color: #F2F2F2;
+    text-transform:uppercase;
+    height: clamp(45px, 8vw, 50px);
+    width: clamp(80px, 30vw, 134px);
+    font-size: clamp(14px, 4.5vw, 23px);
+    transition: 0.5s ease;
+    text-decoration: none;
+    padding: clamp(5px, 2%, 10px) clamp(10px, 5%, 20px);
+    align-items: center;
+}
+.btn-adicionar:hover{
+    background-color: rgb(0, 0, 102);
+    transform: scale(1.05);
+}
+
+
+table {
+    margin: 0 0 0 20%;
+    width: 50%; 
+    border-collapse: collapse; 
+}
+
+th {
+    align-items: center;
+    text-align: center;
+    color: #F2F2F2;
+    border: 2px solid white;
+    font-family: Kagitingan; 
+    font-size: clamp(8px, 2.5vw, 25px); 
+    background-color: #9E241A;
+    padding: clamp(4px, 2vw, 8px);
+}
+
+td{
+    align-items: center;
+    text-align: center;
+    color: #F2F2F2;
+    border: 2px solid white;
+    font-family: Kagitingan, sans-serif; 
+    font-size: clamp(8px, 2.5vw, 30px);
+    background-color: transparent; 
+    padding: clamp(4px, 1vw, 8px);
+}
+
+.coluna_btn a {
+    display: inline-flex;
+    padding: clamp(5px, 2vw, 10px);
+    font-size: clamp(10px, 3vw, 16px);
+}
+
+.deletar{
+    align-items: center;
+    display: inline-flex;
+    text-transform: uppercase;
+    font-family: Kagitingan;
+    text-decoration: none;
+    background-color: #9E241A;
+    color: #F2F2F2;
+    width: clamp(25px, 15vw, 80px);
+    height: clamp(15px, 4vw, 50px);
+    border-radius: clamp(5px, 1vw, 10px);
+    transition: background-color 0.5s ease, transform 0.2s ease;
+    background-color: red;
+    padding: clamp(2px, 2vw, 5px);
+    margin: 5% auto;
+}
+
+.deletar:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: rgb(193, 3, 3);
+}
+
+.editar{
+    margin: 5% auto;
+    padding: clamp(2px, 2vw, 5px);
+    align-items: center;
+    display: inline-flex;
+    text-transform: uppercase;
+    font-family: Kagitingan;
+    text-decoration: none;
+    background-color: #9E241A;
+    color: #F2F2F2;
+    width: clamp(25px, 15vw, 80px);
+    height: clamp(15px, 4vw, 50px);
+    border-radius: clamp(5px, 1vw, 10px);
+    transition: background-color 0.5s ease, transform 0.2s ease;
+    background-color: rgb(174, 0, 255);
+    
+}
+.editar:hover{
+    cursor: pointer;
+    background-color: rgb(142, 0, 218);
+    transform: scale(1.05);
+}

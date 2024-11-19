@@ -1,0 +1,262 @@
+@font-face {
+    font-family: GrimptBold;
+    src: url(../Fonte/grimpt-bold.ttf);
+}
+
+@font-face {
+    font-family: GrimptRegular;
+    src: url(../Fonte/grimpt-regular.ttf);
+}
+
+@font-face {
+    font-family: Kagitingan;
+    src: url(../Fonte/Kagitingan.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo - Navbar*/
+body{
+    width: 100%;
+    line-height: 1.5;
+    font-size: 16px;
+    background-color: #1B262C; 
+}
+.Logo {
+    width: 12%;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    max-width: 90%
+}
+
+.Links { 
+    display: flex;
+}
+
+.Links > li {
+    padding-left: 1rem;
+    list-style: none;
+    
+}
+.Botao_sobrenos {
+    color: #c43024;
+    font-family: GrimptBold;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.Botao_home,
+.Botao_serviços {
+    text-decoration: none;
+    color: #F2F2F2;
+    font-family: GrimptBold;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.Botao_faleconosco {
+    font-family: GrimptBold;
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    color: #F2F2F2;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: #c43024;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.Botao_faleconosco:hover {
+    background-color: #9E241A;
+    color: #F2F2F2;
+}
+
+
+
+
+
+
+/*Conteúdo da página*/
+.Palavras{
+    color: #c43024;
+    font-family: Kagitingan;
+    text-transform: uppercase;
+    font-size: clamp(1.5rem, 6vw, 3rem);
+}
+
+.Enunciado_1{
+    font-family: GrimptBold;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    font-size: clamp(2rem, 6vw, 4rem);
+    text-align: center;
+}
+
+.Descricao{
+    color: #F2F2F2;
+    font-family: GrimptRegular;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: clamp(1rem, 3vw, 2rem); 
+    padding-top: clamp(2rem, 5vw, 4rem); 
+}
+
+.Titulo{
+    color: #F2F2F2;
+    font-family: GrimptRegular;
+    text-transform: uppercase;
+    font-size: clamp(1.5rem, 4.2vw, 3.5rem); 
+    text-align: center;
+    padding-top: clamp(1rem, 3vw, 2rem); 
+}
+
+.Maior{
+    font-family: Kagitingan;
+    font-size: clamp(5rem, 15vw, 10rem);
+    color: #F2F2F2;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.Alphas{
+    background-color: #741920;
+    background-image: url(../Logo/LoboFundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: clamp(1rem, 4vw, 3rem);
+}
+
+.Image_Container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Image_Container > div {
+    width: 20rem;
+    margin: clamp(1rem, 5vw, 3rem) clamp(2rem, 5vw, 7%);
+    text-align: center;
+    flex: 1 1 300px;
+}
+
+.Img {
+    margin-top: clamp(2rem, 5vw, 5rem);
+    max-width: 100%; 
+    height: auto; 
+}
+
+.Nome {
+    font-family: Kagitingan;
+    text-transform: uppercase;
+    font-size: clamp(2rem, 4vw, 4rem);
+    color: #F2F2F2;
+    margin: clamp(5px, 2vw, 10px)0 0;
+}
+
+.Funcao {
+    font-family: GrimptRegular;
+    text-transform: uppercase;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: #F2F2F2;
+    margin: clamp(5px, 2vw, 10px) 0 0;
+}
+
+
+
+
+
+
+/*Rodapé*/
+.Rodape{
+    background-color: #1B262C;
+}
+
+.Imagem_3{
+    text-align: center;
+    width: 10rem; 
+    display: block; 
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.Conteudo {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.Esquerda {
+    margin: 0 1.2rem 0 0.9rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.Texto_3,
+.Texto_4 {
+    font-family: GrimptBold;
+    text-transform: uppercase;
+    font-size: clamp(0.9rem, 2.5vw, 1.25rem);
+    color: #F2F2F2;
+    background-color: #1B262C;
+}
+
+.Orcamento {
+    color: #c43024;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    font-family: Kagitingan;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #1B262C;
+    transition: color 0.5s ease, font-size 0.5s ease;
+}
+
+.Orcamento:hover {
+    color: #9E241A;
+    font-size: clamp(1.22rem, 4.1vw, 1.869rem);
+}
+
+.Direitos{
+    background-color: #1B262C;
+    color: #F2F2F2;
+    font-family: GrimptBold;
+    font-size: clamp(0.9rem, 2.5vw, 1.25rem);
+}
+
+.Contatos {
+    margin-right: 0.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.Insta_1,
+.Zap_1,
+.Email_1 {
+    color: #c43024;
+    text-transform: uppercase;
+    font-family: GrimptBold;
+    font-size: clamp(0.9rem, 2.5vw, 1.25rem);
+}
+
+.h2 {
+    color: #c43024;
+    font-family: Kagitingan;
+    font-size: clamp(1rem, 2.5vw, 1.5625rem);
+    text-transform: uppercase;
+}
+
+.Insta, .Zap, .Email {
+    color: #F2F2F2;
+    font-family: GrimptRegular;
+    font-size: clamp(13px, 2.8vw, 17px);
+    text-transform: uppercase;
+}
+
